@@ -1,0 +1,820 @@
+@font-face{
+    font-family: 'Century Gothic';
+    src:url('../fonts/CenturyGothic.otf');
+}
+@font-face{
+    font-family: 'Circular Std';
+    src:url('../fonts/CircularStd.otf');
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+body{
+    font-family: 'Circular Std';
+}
+img{
+    max-width: 100%;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+a{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Circular Std';
+    line-height: 21px;
+}
+h1, h2, h3, h4, h5, h5{
+    font-family: 'Century Gothic';
+    font-weight: 700;
+    color: #12263E;
+}
+h1{
+    font-size: 64px;
+    line-height: 80px;
+}
+h2{
+    font-size: 48px;
+    line-height: 60px; 
+}
+h3{
+    font-size: 24px;
+    line-height: 30px;
+}
+h4{
+    font-size: 24px;
+    line-height: 30px;
+}
+ul li{
+    list-style: none;
+}
+p{
+    font-size: 18px;
+    line-height: 27px;
+    color: #3C4F65;
+    font-family: 'Circular Std';
+    font-weight: 450;
+}
+/*****Header****/
+ul.nav-menu.row {
+    width: 44%;
+}
+header {
+    padding: 25px 0px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.nav-menu li a {
+    line-height: 21px;
+    color: #fff;
+}
+img#menu {
+    display: none;
+}
+/*  Banner section*/
+
+section.banner-section {
+    background: url(../images/banner-Bg.png);
+    background-size: cover;
+    position: relative;
+}
+.banner-contant h1 {
+    color: #fff;
+}
+.banner-contant p {
+    color: #bbb;
+    padding: 22px 0px 34px 0px;
+}
+.banner-contant {
+    width: 36%;
+    padding: 220px 0px 240px 0px;
+}
+.banner-image img {
+    position: absolute;
+    right: 0px;
+    top: 25%;
+}
+a.dark-btn {
+    padding: 20px 36px;
+    background: #376DDF;
+    color: #f5f5f5;
+    display: inline-block;
+}
+a.btn {
+    background: #161C21;
+    padding: 18.5px 32px;
+    border: 1.8px solid #ffffff52;
+    display: inline-block;
+    color: #bbb;
+}
+.banner-buttons .btn{
+    margin-left: 25px;
+}
+
+/*Services-image-boxes */
+section.crypto-services {
+    padding: 100px 0px 70px 0px;
+}
+.image-box {
+    padding: 50px 70px ;
+    width: 33%;
+}
+.crypto-image-boxes.row {
+    border-top: 1px solid #12263E1A;
+    border-bottom: 1px solid #12263E1A;
+}
+
+.image-box p {
+    padding-top: 10px;
+    line-height: 24px;
+}
+.image-box h3 {
+    padding-top: 25px;
+}
+.image-box{
+    position: relative;
+}
+.image-box:not(:last-child)::after {
+    content: "";
+    width: 1px;
+    height: 200px;
+    background-color: #0000001A;
+    position: absolute;
+    right: 0px;
+    top: 15%;
+}
+
+/* Coins Market Section */
+.coins-markart-content, .mobile-app-content {
+    width: 46%;
+    padding-right: 100px;
+}
+.coins-markart-content p {
+    padding: 15px 0px 10px 0px;
+}
+p.blue-text {
+    color: #0081EB;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    padding: 5px 0px 34px 0px ;
+}
+/*Mobile-app-section  */
+.mobile-app{
+    background-image: url(../images/Mobile-app-bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-top: -130px;
+    padding-top:80px;
+}
+.mobile-app-content{
+    padding: 0px;
+}
+.mobile-app-content p {
+    padding: 26px 0px;
+}
+.mobile-apps-img {
+    width: 48%;
+}
+img.play-store-icon {
+    margin-left: 15px;
+}
+/* Revolution Section */
+section.revolution {
+    background-color: #F8F8F8EE;
+    padding: 160px 0px 120px 0px;
+    background-image: url(../images/Revoultion-wave-shape.png);
+    background-repeat: no-repeat;
+}
+.revolution-content{
+    width: 59%;
+}
+.revolution-heading{
+    width: 35%;
+}
+.revolution-heading img {
+    position: absolute;
+    top: -100px;
+    left: -15px;
+}
+.revolution-heading {
+    position: relative;
+}
+.revolution-image-box {
+    padding-top: 100px;
+    width: 24%;
+}
+.revolution-image-box h3 {
+    padding: 25px 0px 12px 0px;
+}
+/* Innovation-enviroment section */
+.Innovative-Environment-section {
+    padding: 120px 0px;
+}
+.innovation-heading-row {
+    text-align: center;
+    padding: 0px 180px;
+}
+.innovation-heading-row p{
+    padding: 12px 0px;
+}
+a.sing-up-btn {
+    font-weight: 900;
+    color: #376DDF;
+}
+a.sing-up-btn.row {
+    justify-content: start;
+    padding-top: 15px;
+}
+.sing-up-btn img{
+    padding: 2px 0px 0px 10px;
+}
+.create-account.row {
+    background: #F8F8F8;
+    padding: 8px 20px 15px 0px;
+}
+.create-account-content {
+    width: 58%;
+}
+.create-account.row {
+    width: 48.6%;
+}
+.innovation-join-in-row.row {
+    padding: 60px 80px 0px 80px;
+}
+.create-account-image {
+    width: 44%;
+}
+.innovation-heading-row {
+    position: relative;
+}
+.innovation-heading-row img {
+    position: absolute;
+    right: 0px;
+    top: 35%;
+}
+footer {
+    background-color: #171F24;
+    background-image: url(../images/Footer-wave-bg.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    padding: 75px 0px 40px 0px;
+} 
+.footer-menu-list.row {
+    width: 60%;
+    align-items: flex-start;
+}
+.footer-logo-col {
+    width: 20%;
+}
+.footer-menu-last-col{
+    width: 20%;
+}
+.footer-menu{
+    width: 32%;
+}
+.last-col{
+    width: 100%;
+}
+ul.footer-menu-list-ver li a {
+    color: #F5F5F5;
+    line-height: 32px;
+    font-size: 14px;
+}
+.footer-menu h4, .footer-menu-last-col h4 {
+    color: #F5F5F5;
+    line-height: 68px;
+}
+.footer-row{
+    align-items: flex-start;
+}
+.footer-logo-col img {
+    padding-top: 70px;
+}
+/* Responsive */
+@media (max-width:1200px) {
+    .container {
+        width: 94%;
+    }
+    .banner-buttons .btn {
+        margin-left: 20px;
+    }
+}
+@media (min-width:992px) and (max-width:1199px) {
+    .container {
+        width: 93%;
+    }
+    h3 {
+        font-size: 22px;
+        line-height: 24px;
+    }
+    h2 {
+        font-size: 40px;
+        line-height: 54px;
+    }
+    
+    .image-box {
+        padding: 50px 20px;
+    }
+    .image-box p {
+        line-height: 22px;
+        font-size: 16px;
+    }
+    .image-box h3 {
+        padding-top: 15px;
+    }
+    .image-box img {
+        width: 28%;
+    }
+    .banner-contant {
+        width: 45%;
+        padding: 140px 0px 145px 0px;
+    }
+    h1 {
+        font-size: 54px;
+        line-height: 72px;
+    }
+    .ofspace-logo {
+        width: 40%;
+    }
+    .banner-image img {
+        top: 21%;
+        width: 52%;
+    }
+    section.crypto-services {
+        padding: 70px 0px 70px 0px;
+    }
+    .coins-markart-content, .mobile-app-content {
+        padding-right: 40px;
+    }
+    a.dark-btn {
+        padding: 20px 28px;
+    }
+    a.btn {
+        padding: 18.5px 28px;
+    }
+    ul.nav-menu.row {
+        width: 50%;
+    }
+    p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    p.blue-text {
+        font-size: 18px;
+        line-height: 26px;
+        padding: 5px 0px 14px 0px;
+    }
+    .mobile-app {
+        margin-top: -180px;
+        padding-top: 60px;
+        background-size: contain;
+    }
+    .mobile-apps-img img {
+        margin-bottom: -55px;
+    }
+    section.revolution {
+        background-color: #F8F8F8EE;
+        padding: 120px 0px 80px 0px;
+        background-repeat: no-repeat;
+    }
+    .revolution-image-box {
+        padding-top: 70px;
+        width: 27%;
+    }
+    .revolution-image-box img {
+        width: 35%;
+    }
+    .revolution-heading img {
+        position: absolute;
+        top: 92%;
+        left: 55%;
+        width: 18%;
+    }
+    .Innovative-Environment-section {
+        padding: 80px 0px;
+    }
+    .innovation-join-in-row.row {
+        padding: 60px 40px 0px 40px;
+    }
+    .create-account.row {
+        background: #F8F8F8;
+        padding: 8px 10px 15px 0px;
+    }
+    h3 {
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .create-account-content {
+        padding-left: 20px;
+    }
+    h4 {
+        font-size: 22px;
+    }
+    .footer-logo-col img {
+        padding-top: 50px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .container {
+        width: 92%;
+    }
+    ul.nav-menu {
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 20px;
+    }
+    img#menu {
+        display: block;
+    }
+    ul.nav-menu.row {
+        flex-direction: column;
+        width: 94%;
+        position: absolute;
+        top: 80px;
+        align-items: center;
+        display: none;
+    }
+    ul.nav-menu.row li a{ 
+        padding: 5px;
+        line-height: 28px;
+    }
+    img#menul:hover,  .nav-menu{
+        display: block;
+    }
+    .banner-image img {
+        top: 26%;
+        width: 52%;
+    }
+    h1 {
+        font-size: 34px;
+        line-height: 45px;
+        padding-right: 50px;
+    }
+    h2 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+    h3 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .banner-contant p {
+        padding: 16px 40px 25px 0px;
+    }
+     
+    .banner-contant {
+        width: 45%;
+        padding: 130px 0px 130px 0px;
+    }
+    p {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    a {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    a.dark-btn {
+        padding: 15px 20px;
+    }
+    a.btn {
+        padding: 15.4px 22px;
+    }
+    .banner-buttons .btn {
+        margin-left: 10px;
+    }
+    section.crypto-services {
+        padding: 45px 0px 50px 0px;
+    }
+    .image-box {
+        padding: 35px 20px;
+    }
+    .image-box p {
+        padding: 8px 18px 0px 0px;
+        line-height: 18px;
+    }
+    .image-box img {
+        width: 30%;
+    }
+    .image-box:not(:last-child)::after {
+        height: 160px;
+    }
+    .coins-markart-content, .mobile-app-content {
+       padding-right: 0px;
+    }
+    p.blue-text {
+        font-size: 14px;
+        line-height: 21px;
+        padding: 5px 0px 14px 0px;
+    }
+    .mobile-app-content img {
+        width: 37%;
+    }
+    .mobile-app {
+        margin-top: -110px;
+        padding-top: 30px;
+        background-size: contain;
+    }
+    .mobile-apps-img img {
+        margin-bottom: -45px;
+    }
+    section.revolution {
+        padding: 40px 0px 40px 0px;
+    }
+    .revolution-heading img {
+        position: absolute;
+        top: 99%;
+        left: 55%;
+        width: 18%;
+    }
+    .revolution-image-box {
+        padding-top: 50px;
+        width: 30%;
+    }
+    .revolution-image-box img {
+        width: 29%;
+    }   
+    .revolution-image-box h3 {
+        padding: 20px 0px 10px 0px;
+    } 
+    .innovation-heading-row {
+        padding: 0px 110px;
+    }
+    .innovation-join-in-row.row {
+        padding: 60px 50px 0px 50px;
+    }
+    .create-account-content h3 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .create-account-content {
+       padding-left: 25px;
+    }    
+    a.sing-up-btn img {
+        width: 18%;
+        padding-left: 7px;
+    }
+    .Innovative-Environment-section {
+        padding: 45px 0px;
+    }
+    footer {
+        background-image: url(../images/footer-bg-responsive.png);
+        padding: 45px 0px 35px 0px;
+    }
+    .footer-menu h4, .footer-menu-last-col h4 {
+        font-size: 14px;
+        line-height: 36px;
+    }
+    ul.footer-menu-list-ver li a {
+        line-height: 27px;
+        font-size: 12px;
+    }
+    .footer-logo-col img {
+        padding-top: 30px;
+        width: 55%;
+    }    
+}
+@media (min-width:300px) and (max-width:767px) {
+    .container{
+        width: 90%;
+    }
+    ul.nav-menu {
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 20px;
+    }
+    img#menu {
+        display: block;
+    }
+    body{
+        background-color: #fffdfa;
+    }
+    nav.navbar{
+        flex-direction: row;
+    }
+    ul.nav-menu.row {
+        flex-direction: column;
+        width: 94%;
+        position: absolute;
+        top: 80px;
+        align-items: center;
+        display: none;
+    }
+    ul.nav-menu.row li a{ 
+        padding: 5px;
+        line-height: 28px;
+    }
+    img#menul:hover,  .nav-menu{
+        display: block;
+    }
+    .banner-image img {
+        top: 70%;
+        width: 67%;
+    }
+    .ofspace-logo img {
+        width: 60%;
+    }
+    h1 {
+        font-size: 34px;
+        line-height: 45px;
+    }
+    h2 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+    h3 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    p{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    a {
+        font-size: 10px;
+        line-height: 13px;
+    }
+    .banner-contant p {
+        padding: 10px 40px 15px 40px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .banner-contant {
+        width: 100%;
+        padding: 75px 0px 170px 0px;
+        text-align: center;
+    }
+    a.dark-btn {
+        padding: 15px 25px;
+    }
+    .banner-buttons .btn {
+        margin-left: 10px;
+    }
+    .banner-contant h1 {
+        padding: 0px 50px;
+    }
+    a.btn {
+        padding: 15.4px 22px;
+    }    
+    .image-box {
+        padding: 10px 70px;
+        width: 100%;
+    }
+    .crypto-image-boxes.row{
+        text-align: center;
+        border: none;
+    }
+    .image-box:not(:last-child)::after {
+      display: none;
+    }
+    .image-box img {
+        width: 34%;
+    }
+    .image-box h3 {
+        padding-top: 15px;
+    }
+    section.crypto-services {
+        padding: 100px 0px 35px 0px;
+    }
+    .image-box p {
+        padding-top: 7px;
+        line-height: 18px;
+    } 
+    .coins-card {
+        order: 2;
+        padding: 25px 0px 0px 35px;
+    }
+    .coins-markart-content, .mobile-app-content, .revolution-heading, .revolution-content, .revolution-image-box, .create-account.row {
+        width: 100%;
+        padding-right: 0px;
+        text-align: center;
+    }
+    p.blue-text {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 5px 0px 14px 0px;
+    }
+    .mobile-app-content h2 {
+        padding: 0px 50px;
+    }
+    .mobile-app {
+        background-image: url(../images/Mobile-app-bg-responsive.png);
+        background-repeat: no-repeat;
+        background-position:  top left;
+        margin-top: -130px;
+        padding-top: 110px;
+    }
+    .mobile-app-content img {
+        width: 37%;
+    }
+    .mobile-apps-img {
+        width: 100%;
+    }
+    .mobile-apps-img img {
+        margin-bottom: -45px;
+    }
+    .revolution-content p {
+        padding-top: 10px;
+        line-height: 21px;
+    }
+    .revolution-heading img {
+      display: none;
+    }
+    section.revolution {
+        padding: 40px 0px 40px 0px;
+    }
+    .revolution-image-box {
+        padding-top: 20px;
+    }
+    .revolution-image-box img {
+      width: 20%;
+    }
+    .revolution-image-box  p{
+        padding: 0px 50px;
+    }
+    .revolution-image-box h3 {
+        padding: 15px 0px 10px 0px;
+    }
+    .Innovative-Environment-section {
+        padding: 50px 0px;
+    }
+    .innovation-heading-row {
+        text-align: center;
+        padding: 0px 10px;
+    }
+    .innovation-heading-row img{
+        display: none;
+    }
+    .innovation-join-in-row.row {
+        padding: 20px 0px 0px 0px;
+    }
+    .create-account, .sing-up-btn {
+        flex-direction: row;
+    }
+    .create-account-content {
+        text-align: left;
+        padding-left: 15px;
+    }
+    .create-account-image {
+        width: 40%;
+    }
+    .create-account.row {
+        padding: 6px 30px 10px 0px;
+        margin-top: 15px;
+    }
+    .create-account-content h3 {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    a.sing-up-btn img {
+        width: 15%;
+        padding-left: 7px;
+    }
+
+    footer {
+        background-image: url(../images/footer-bg-responsive.png);
+        padding: 45px 0px 25px 0px;
+    }
+    .footer-logo-col img {
+        padding-top: 0px;
+    }    
+    .footer-logo-col {
+        width: 100%;
+        text-align: center;
+    } 
+    .footer-logo-col img{
+        width: 26%;
+    }
+    .footer-menu-list.row {
+        flex-direction: row;
+        width: 100%;
+        padding-top: 15px;
+    }  
+    .footer-menu h4, .footer-menu-last-col h4 {
+        line-height: 36px;
+        font-size: 14px;
+    } 
+    ul.footer-menu-list-ver li a {
+        line-height: 28px;
+        font-size: 12px;
+    }
+    .footer-row {
+        align-items: center;
+    }
+}
