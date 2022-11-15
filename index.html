@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ofspace-version-five-point-two</title>
+    <title>Ofspace-version-five-point-one</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -21,7 +21,18 @@
                     <li><a href="#">Sign Up </a></li>
                     <li><a href="#"> Log In</a></li>
                 </ul>
-               <img  src="./images/Menu.svg" class="nav-icon" id="menu" alt="">
+                <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                        <ul class="mobile-menu">
+                            <li><a href="/home">Instant Buy & Sell</a></li>
+                            <li><a href="/markets">Markets</a></li>
+                            <li><a href="/discover">Discover</a></li>
+                            <li><a href="/sign-up" >Sign Up</a></li>
+                            <li><a href="/log-in"> Log In</a></li>
+                          </ul>
+                    </div>
                                                   
             </nav>
         </div>
@@ -218,5 +229,12 @@
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+function toggleMobileMenu(menu) {
+  menu.classList.toggle('open');
+}
+    </script>
 </body>
 </html>

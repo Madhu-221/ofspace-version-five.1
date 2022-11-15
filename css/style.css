@@ -82,6 +82,64 @@ header {
 img#menu {
     display: none;
 }
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    height: 160px;
+    width: 100%;
+    background: #376ddf;
+    z-index: 1;
+    padding: 20px 0px;
+  }
+  li.nav-btn {
+    padding: 3px 20px !important;
+  }
+  .nav-btn {
+    margin: 8px 0px !important;
+  }
+  #hamburger-icon div {
+    width: 24px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  #hamburger-icon .bar2{
+    width: 18px;
+    margin-left: 5px;
+  }
+  
+  .open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-3px, 6px);
+  }
+  
+  .open .bar2 {
+    opacity: 0;
+  }
+  
+  .open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+  .mobile-menu li a:hover {
+    color: #0d0d0d;
+  }
 /*  Banner section*/
 
 section.banner-section {
@@ -98,19 +156,25 @@ section.banner-section {
 }
 .banner-contant {
     width: 36%;
-    padding: 220px 0px 240px 0px;
+    padding: 220px 0px 180px 0px;
 }
 .banner-image img {
     position: absolute;
     right: 0px;
-    top: 25%;
+    top: 20%;
 }
 a.dark-btn {
     padding: 20px 36px;
     background: #376DDF;
     color: #f5f5f5;
     display: inline-block;
+    border: 1.8px solid #376DDF;
 }
+.dark-btn:hover {
+    background: #ffffff00;
+    color: #bbb;
+    border-color: #bbb;
+  }
 a.btn {
     background: #161C21;
     padding: 18.5px 32px;
@@ -118,13 +182,18 @@ a.btn {
     display: inline-block;
     color: #bbb;
 }
+.btn:hover {
+    background: #376ddf;
+    color: #fff;
+    border-color: #376ddf;
+  }
 .banner-buttons .btn{
     margin-left: 25px;
 }
 
 /*Services-image-boxes */
 section.crypto-services {
-    padding: 100px 0px 70px 0px;
+    padding: 160px 0px 70px 0px;
 }
 .image-box {
     padding: 50px 70px ;
@@ -311,6 +380,11 @@ ul.footer-menu-list-ver li a {
         margin-left: 20px;
     }
 }
+@media (min-width:1550px) and (max-width: 1800px) {
+    .banner-image img {
+        top: 25%;
+      }
+}
 @media (min-width:992px) and (max-width:1199px) {
     .container {
         width: 93%;
@@ -426,7 +500,16 @@ ul.footer-menu-list-ver li a {
         padding-top: 50px;
     }
 }
+@media (min-width:900px) and (max-width:991px) {
+    .banner-image img {
+        top: 19% !important;
+        width: 51%;
+      }
+      section.crypto-services {
+        padding: 100px 0px 70px 0px !important;
+      }
 
+}
 @media (min-width:768px) and (max-width:991px) {
     .container {
         width: 92%;
@@ -456,7 +539,7 @@ ul.footer-menu-list-ver li a {
         display: block;
     }
     .banner-image img {
-        top: 26%;
+        top: 23%;
         width: 52%;
     }
     h1 {
@@ -475,7 +558,25 @@ ul.footer-menu-list-ver li a {
     .banner-contant p {
         padding: 16px 40px 25px 0px;
     }
-     
+    .mobile-menu li a {
+        font-size: 16px;
+        line-height: 28px;
+        color: #fff;
+        padding-bottom: 10px;
+      }
+      .mobile-menu {
+        height: 225px;
+        padding: 25px 0px;
+      }
+      .mobile-menu li {
+        padding-bottom: 9px;
+      }
+      #hamburger-icon {
+        display: block;
+      }
+      .revolution-heading {
+        width: 37%;
+      }
     .banner-contant {
         width: 45%;
         padding: 130px 0px 130px 0px;
@@ -498,7 +599,7 @@ ul.footer-menu-list-ver li a {
         margin-left: 10px;
     }
     section.crypto-services {
-        padding: 45px 0px 50px 0px;
+        padding: 60px 0px 50px 0px;
     }
     .image-box {
         padding: 35px 20px;
@@ -607,6 +708,14 @@ ul.footer-menu-list-ver li a {
     nav.navbar{
         flex-direction: row;
     }
+    #hamburger-icon {
+        display: block;
+      }
+      .mobile-menu li a {
+        font-size: 14px;
+        line-height: 24px;
+        color: #fff;
+      }
     ul.nav-menu.row {
         flex-direction: column;
         width: 94%;
@@ -690,7 +799,7 @@ ul.footer-menu-list-ver li a {
         padding-top: 15px;
     }
     section.crypto-services {
-        padding: 100px 0px 35px 0px;
+        padding: 130px 0px 35px 0px;
     }
     .image-box p {
         padding-top: 7px;
@@ -711,7 +820,7 @@ ul.footer-menu-list-ver li a {
         padding: 5px 0px 14px 0px;
     }
     .mobile-app-content h2 {
-        padding: 0px 50px;
+        padding: 0px 30px;
     }
     .mobile-app {
         background-image: url(../images/Mobile-app-bg-responsive.png);
