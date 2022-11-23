@@ -106,6 +106,9 @@ img#menu {
     z-index: 1;
     padding: 20px 0px;
   }
+  .nav-menu li a:hover {
+    color: #376ddf;
+  }
   li.nav-btn {
     padding: 3px 20px !important;
   }
@@ -140,6 +143,7 @@ img#menu {
   .mobile-menu li a:hover {
     color: #0d0d0d;
   }
+ 
 /*  Banner section*/
 
 section.banner-section {
@@ -177,7 +181,7 @@ a.dark-btn {
   }
 a.btn {
     background: #161C21;
-    padding: 18.5px 32px;
+    padding: 20px 32px;
     border: 1.8px solid #ffffff52;
     display: inline-block;
     color: #bbb;
@@ -223,7 +227,9 @@ section.crypto-services {
     right: 0px;
     top: 15%;
 }
-
+.image-box img {
+    max-width: 40%;
+  }
 /* Coins Market Section */
 .coins-markart-content, .mobile-app-content {
     width: 46%;
@@ -239,6 +245,11 @@ p.blue-text {
     font-weight: 500;
     padding: 5px 0px 34px 0px ;
 }
+.coins-markart-content a.dark-btn:hover {
+    background: #ffffff00;
+    color: #12263e;
+    border-color: #12263e;
+  }
 /*Mobile-app-section  */
 .mobile-app{
     background-image: url(../images/Mobile-app-bg.png);
@@ -287,6 +298,9 @@ section.revolution {
 .revolution-image-box h3 {
     padding: 25px 0px 12px 0px;
 }
+.revolution-image-box img {
+    width: 38%;
+  }
 /* Innovation-enviroment section */
 .Innovative-Environment-section {
     padding: 120px 0px;
@@ -333,6 +347,9 @@ a.sing-up-btn.row {
     right: 0px;
     top: 35%;
 }
+.sing-up-btn.row:hover {
+    transform: rotateX(360deg);
+  }
 footer {
     background-color: #171F24;
     background-image: url(../images/Footer-wave-bg.png);
@@ -371,6 +388,9 @@ ul.footer-menu-list-ver li a {
 .footer-logo-col img {
     padding-top: 70px;
 }
+ul.footer-menu-list-ver li a:hover {
+    color: #376ddf;
+  }
 /* Responsive */
 @media (max-width:1200px) {
     .container {
@@ -436,7 +456,7 @@ ul.footer-menu-list-ver li a {
         padding: 20px 28px;
     }
     a.btn {
-        padding: 18.5px 28px;
+        padding:20px 28px;
     }
     ul.nav-menu.row {
         width: 50%;
@@ -593,7 +613,7 @@ ul.footer-menu-list-ver li a {
         padding: 15px 20px;
     }
     a.btn {
-        padding: 15.4px 22px;
+        padding: 15px 22px;
     }
     .banner-buttons .btn {
         margin-left: 10px;
@@ -779,7 +799,7 @@ ul.footer-menu-list-ver li a {
         padding: 0px 50px;
     }
     a.btn {
-        padding: 15.4px 22px;
+        padding: 15px 22px;
     }    
     .image-box {
         padding: 10px 70px;
