@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ofspace-version-five-point-one</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <header>
@@ -46,7 +48,7 @@
                     <p>Bittrex global is the most trusted
                         cryptocurrency exchange known
                         for its next-level security.</p>
-                    <div class="banner-buttons">
+                    <div class="banner-buttons" data-aos="fade-up">
                         <a href="#" class="dark-btn">Open Free Account</a>
                         <a href="#" class="btn">View Markets</a>
                     </div>
@@ -59,7 +61,7 @@
     </section>
     <section class="crypto-services">
         <div class="container">
-            <div class="crypto-image-boxes row">
+            <div class="crypto-image-boxes row" data-aos="fade-down">
                 <div class="image-box">
                     <img src="./images/Unmatched-Security-icon.png" alt="">
                     <h3>Unmatched Security</h3>
@@ -91,7 +93,7 @@
                     <h2>Your Access to the Top Coin Markets</h2>
                     <p>Capitalize on trends and trade with confidence through our expansive marketplace listings.</p>
                     <p class="blue-text">Buy, sell and trade over 500 markets</p>
-                    <a href="#" class="dark-btn">View Markets</a>
+                    <a href="#" class="dark-btn" data-aos="fade-right">View Markets</a>
                 </div>
             </div>
          
@@ -103,8 +105,8 @@
                <div class="mobile-app-content">
                   <h2>Bittrex Global Mobile App Available Now</h2>
                   <p>Get the security, trading, and capabilities of the best-in-class regulated cryptocurrency exchange Bittrex Global, directly on your smartphone.</p>
-                  <a href="#"> <img src="./images/App store.png" alt=""></a>
-                  <a href="#"> <img src="./images/Play store.png" class="play-store-icon" alt=""></a>
+                  <a href="#"> <img src="./images/App store.png" data-aos="fade-up"alt=""></a>
+                  <a href="#"> <img src="./images/Play store.png" data-aos="fade-up" class="play-store-icon" alt=""></a>
                </div>
                <div class="mobile-apps-img">
                 <img src="./images/Mobile-app-image.png" alt="">
@@ -124,17 +126,17 @@
                 </div>
             </div>
             <div class="revolution-image-boxes row">
-                <div class="revolution-image-box">
+                <div class="revolution-image-box" data-aos="fade-right">
                     <img src="./images/Unmatched-Security-icon.png" alt="">
                     <h3>Security First</h3>
                     <p>When choosing an exchange, trust matters. That’s why security has been and will always be our top consideration. </p>
                 </div>
-                <div class="revolution-image-box">
+                <div class="revolution-image-box" data-aos="fade-up">
                     <img src="./images/great-trading-icon.png" alt="">
                     <h3>Great Trading</h3>
                     <p>We believe in the potential of blockchain to provide groundbreaking solutions across industries and beyond crypto. </p>
                 </div>
-                <div class="revolution-image-box">
+                <div class="revolution-image-box" data-aos="fade-left">
                     <img src="./images/Robust-technology-icon.png" alt="">
                     <h3>Robust Technology</h3>
                     <p>When choosing an exchange, trust matters. That’s why security has been and will always be our top consideration. </p>
@@ -149,7 +151,7 @@
                 <p>Bitcoin is storming the Bastille, and we’re up front. Bittrex Global’s premier trading platform is designed for those who grasp the power of blockchain’s promise, and want to be a part of the movement. With lightning-fast trades, dependable digital wallets and industry-leading security, we’ve created an exchange to lead this revolutionary technology.</p>
                 <img src="./images/Yellow-design-element.png" alt="">
             </div>
-            <div class="innovation-join-in-row row">
+            <div class="innovation-join-in-row row" data-aos="fade-up">
                 <div class="join-box row">
                     <div class="create-account row">
                         <div class="create-account-image">
@@ -235,6 +237,9 @@
 function toggleMobileMenu(menu) {
   menu.classList.toggle('open');
 }
+AOS.init({
+  duration: 1900,
+})
     </script>
 </body>
 </html>
